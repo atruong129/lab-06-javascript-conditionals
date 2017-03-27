@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var num = prompt("Give me a four digit number")
+//2348
+
+
+
+
+var thou_mod = num % 1000; // 2348%1000 = 348
+//thou_mod = 248
+var thou = (num-thou_mod)/1000; //(2348 - 348)/1000 = 2
+
+var hund_mod = thou_mod %100 ; //348%100 = 48
+var hund = (thou_mod-hund_mod)/100; // (348-48)/100 = 3
+
+
+var ten_mod = hund_mod %10 ; //48%10 = 8
+var ten = (hund_mod-ten_mod)/10; // (48-8)/10 = 0
+
+var one_mod = ten_mod;
+
+console.log(thou + " thousands")
+console.log(hund + " hundreds ")
+console.log(ten + " tens ")
+console.log(ten_mod + " ones ");
+
+
+
+
+</script>
+</body>
+</html>
+
+
